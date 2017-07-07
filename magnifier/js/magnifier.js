@@ -52,7 +52,7 @@ function magnifierMove(magnifier, small_area, event) {
 		magnifier.style.top = event.clientY - minLeft / 2 + "px"; // 放大镜完全在图片内时正常移动
 	}
 }
-	
+
 //显示放大镜得到的图片，实时更新可视区域
 function show_big_view() {
 	var curLeft = getStyle(magnifier, "left");

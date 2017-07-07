@@ -26,13 +26,13 @@ img {
 }
 
 #big {
-	background-image: url(images/big.jpg);
+	background-image: url(images/big.png);
 	width: 700px;
 	height: 600px;
 	position: relative;
 }
 
-#big_area {    
+#big_area {
 	width: 400px;
 	height: 400px;
 	background-color: white;
