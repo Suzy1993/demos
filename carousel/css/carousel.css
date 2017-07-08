@@ -1,102 +1,82 @@
-#box {
+* {
+	padding: 0;
+	margin: 0;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+#container {
 	width: 400px;
 	height: 300px;
-	position:absolute;
+	position: absolute;
+	overflow: hidden;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
-	overflow: hidden;
 }
 
-#images {
-	width: 2000px;
-	height: 100%;
+#container ul {
 	position: absolute;
-	top: 0;
 	left: 0;
+	top: 0;
+	width: 2400px;
 }
 
-.img {
+#container ul li {
 	width: 400px;
-	height: 100%;
-	position: absolute;
-	top: 0;
-}
-
-#img1 {
-	left: 0;
-}
-
-#img2 {
-	left: 400px;
-}
-
-#img3 {
-	left: 800px;
-}
-
-#img4 {
-	left: 1200px;
-}
-
-#img5 {
-	left: 1600px;
-}
-
-#img_virtual {
-	left: 2000px;
-}
-
-.prev, .next {
-	position: absolute;
-	top: 0;
-	width: 30px;
 	height: 300px;
-	text-align: center;
-	font-size: 32px;
-	background: #eee;
-	opacity: 0.3;
-	z-index: 100;
-	line-height: 300px;
-	cursor: pointer;
+	float: left;
 }
 
-.prev:hover, .next:hover {
-	opacity: 0.5;
-}
-
-.prev {
-	left: 0;
-}
-
-.next {
-	right: 0;
-}
-
-#indexes {
+#container ol {
 	position: absolute;
-	bottom: 0;
 	right: 0;
-	width: 100px;
-	height: 20px;
-	cursor: pointer;
+	bottom: 0;
+	line-height: 20px;
+	text-align: center;
 }
 
-.index {
+#container ol li {
 	float: left;
 	width: 20px;
 	height: 20px;
-	line-height: 20px;
+	background: #fff;
+	border: 1px solid #ccc;
+	cursor: pointer;
+}
+
+#container ol li.current {
 	background: #ccc;
+}
+
+#arrow {
+	display: none;
+}
+
+#arrow span {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
 	text-align: center;
-	border-left: 1px solid #aaa;
-	box-sizing: border-box;
+	font-weight: bold;
+	font-family: '黑体';
+	position: absolute;
+	top: 50%;
+	transform: translateY(-20px);
+	background: #000;
+	opacity: 0.3;
+	cursor: pointer;
+	font-size: 30px;
+	color: #fff;
+	border: 1px solid #fff;
 }
 
-.index:hover {
-	color: #eee;
+#arrow #left {
+	left: 0;
 }
 
-.index:first-child {
-	background: #555;
+#arrow #right {
+	right: 0;
 }

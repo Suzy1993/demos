@@ -6,27 +6,20 @@
 		<title>轮播</title>
 	</head>
 	<body>
-		<div id="box">
-			<div id="images">
-				<div class="img" id="img1"><img src="images/img1.png" /></div>
-				<div class="img" id="img2"><img src="images/img2.png" /></div>
-				<div class="img" id="img3"><img src="images/img3.png" /></div>
-				<div class="img" id="img4"><img src="images/img4.png" /></div>
-				<div class="img" id="img5"><img src="images/img5.png" /></div>
-				<!--第一张图片放到后面，当作假的第一张-->
-				<div class="img" id="img_virtual"><img src="images/img1.png" /></div>
-			</div>
-			<div id="indexes">
-				<div class="index" id="index1">1</div>
-				<div class="index" id="index2">2</div>
-				<div class="index" id="index3">3</div>
-				<div class="index" id="index4">4</div>
-				<div class="index" id="index5">5</div>
-			</div>
-			<div class="prev"><</div>
-			<div class="next">></div>
+		<div id="container">
+				<ul>
+					<li><img src="images/img1.png"></li>
+					<li><img src="images/img2.png"></li>
+					<li><img src="images/img3.png"></li>
+					<li><img src="images/img4.png"></li>
+					<li><img src="images/img5.png"></li>
+				</ul>
+				<ol></ol>
+				<div id="arrow">
+					<span id="left">&lt;</span>
+					<span id="right">&gt;</span>
+				</div>
 		</div>
+		<script src="js/carousel.js"></script>
 	</body>
-	<script src="js/jquery-1.8.2.min.js"></script>
-	<script src="js/carousel.js"></script>
 </html>
